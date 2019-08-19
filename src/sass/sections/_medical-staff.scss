@@ -1,0 +1,92 @@
+.medical-staff {
+    .zl-box-small > iframe{
+        margin: 0 auto;
+    }
+    article {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+
+        .text-box {
+            //text-align: justify;
+            text-justify: inter-character;
+        }
+
+        .text-box,
+        .staff-box {
+            flex: 1;
+        }
+
+        .staff-box:last-of-type {
+            padding-right: 0px;
+        }
+
+        .staff-box {
+            padding-left: 30px;
+            padding-right: 0px;
+
+            img {
+                max-width: 100%;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            .staff-title {
+                color: $secondary-color;
+                font-weight: 700;
+            }
+
+            ul {
+                margin-top: 20px;
+                padding-left: 0;
+
+                li {
+                    font-weight: 700;
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    .medical-staff {
+        article {
+            flex-direction: column;
+
+            .staff-box {
+                padding-left: 0px;
+                margin: 0 auto;
+                // width: 500px;
+                margin-top: 20px;
+
+                img {
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medical-staff {
+        article {
+            .staff-box {
+                ul {
+                    li {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

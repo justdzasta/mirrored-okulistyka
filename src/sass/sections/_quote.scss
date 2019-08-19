@@ -1,0 +1,31 @@
+.quote {
+    figure {
+        position: relative;
+        // width: 70%;
+        // left: 15%;
+        margin-top: 50px;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/quote.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size:  cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 473px;
+        margin-bottom: 50px;
+
+        .text-container {
+            h2, p {
+                color: white;
+            }
+            position: absolute;
+            top: 60%;
+            left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .quote {
+        display: none;
+    }
+}

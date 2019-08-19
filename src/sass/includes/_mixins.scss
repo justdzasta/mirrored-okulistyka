@@ -1,0 +1,20 @@
+@mixin font($font-size, $line-height, $color, $font-weight) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    font-weight: $font-weight;
+}
+
+
+//breakpoints to RWD
+
+$breakpoints: (
+    "phone":        320px,
+    "phone-wide":   480px,
+    "phablet":      576px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  992px,
+    "desktop":      1200px,
+    "desktop-wide": 1440px
+);

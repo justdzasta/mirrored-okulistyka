@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Okulistyka dr n. med. Andrzej Michalski, lek. Anna Janusz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- RWD Table package -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/RWD-Table-Patterns@5.3.3/dist/css/rwd-table.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/RWD-Table-Patterns@5.3.3/dist/js/rwd-table.min.js"></script>
+
+
+</head>
+
+<body>
+    ${require('./html/partials/header.html')}
+    ${require('./html/partials/navmenu.html')}
+    ${require('./html/sections/static-slider.html')}
+
+    <main>
+        ${require('./html/sections/office.html')}
+        ${require('./html/sections/medical-staff.html')}
+        ${require('./html/sections/services.html')}
+        ${require('./html/sections/pricing.html')}
+        ${require('./html/sections/quote.html')}
+
+        ${require('./html/sections/registration.html')}
+        ${require('./html/sections/clause.html')}
+    </main>
+        ${require('./html/partials/footer.html')}
+
+        <div class="full-width-bar">
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<nav id="navmenu">
+    <p class="logo-container">
+        Okulista Poznań
+<!--        <img src="http://via.placeholder.com/128x23" alt="logo-klienta">-->
+    </a>
+
+    <button class="hamburger-container" id="#hamburger-container">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <ul id="navmenu-list" class="desktop-view">
+        <li>
+            <a href="#start">Start</a>
+        </li>
+        <li>
+            <a href="#okulistyka">Usługi</a>
+        </li>
+        <li>
+            <a href="#cennik">Cennik</a>
+        </li>
+        <li>
+            <a href="#mapa-dojazdu">Kontakt / Mapa dojazdu</a>
+        </li>
+    </ul>
+</nav>
+
+
+
+<script>
+    const button = document.querySelector('.hamburger-container');
+    let navmenu = document.getElementById('navmenu');
+    let navmenuList = document.getElementById('navmenu-list');
+
+    button.addEventListener('click', function () {
+        button.classList.toggle('active');
+        navmenuList.classList.toggle('collapse');
+        navmenu.classList.toggle('responsive');
+    });
+</script>

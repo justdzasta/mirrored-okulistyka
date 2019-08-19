@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
+
+h1,
+.h1 {
+    @include font(5em, 32px, $white, $bold);
+
+    @media (max-width: 520px) {
+        @include font(3em, 32px, $white, $bold)
+    }
+}
+
+h2,
+.h2 {
+    @include font(32px, 42px, $primary-color, $bold);
+        @media (max-width: 480px) {
+            @include font(28px, 42px, $primary-color, $bold)
+        }
+}
+
+h3,
+.h3 {
+    @include font(20px, 42px, $secondary-color, $bold);
+
+    @media (max-width: 520px) {
+        @include font(18px, 32px, $secondary-color, $bold)
+    }
+}
+
+h4,
+.h4 {
+    @include font(16px, 32px, $accent-color, $bold);
+    text-transform: uppercase;
+}
+
+h5,
+.h5 {
+    @include font(24px, 32px, $primary-color, $bold)
+}
+
+ul {
+    li {
+        a {
+            @include font(14px, 32px, $primary-color, $semi-bold)
+        }
+    }
+}
+
+p {
+    @include font(16px, 32px, none, $regular);
+
+    @media (max-width: 480px) {
+        @include font(12px, 24px, none, $regular)
+    }
+}
+
+.subnav {
+    @include font(12px, 32px, $subnav-color, $semi-bold)
+}

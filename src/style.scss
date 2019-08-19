@@ -1,0 +1,28 @@
+//includes - constans and global chunk styling files 
+
+@import './src/sass/includes/normalize';
+@import './src/sass/includes/variables';
+@import './src/sass/includes/mixins';
+@import './src/sass/includes/typography';
+
+@import './src/sass/index';
+
+//partials - repeating in every site template (like footer or header)
+
+@import './sass/partials/header';
+@import './sass/partials/navmenu';
+
+
+//sections - every part of the site styling separately
+
+@import './sass/sections/static-slider';
+@import './sass/sections/office';
+@import './sass/sections/medical-staff';
+@import './sass/sections/services';
+@import './sass/sections/pricing';
+@import './sass/sections/quote';
+@import './sass/sections/registration';
+@import './sass/partials/footer';
+
+
+

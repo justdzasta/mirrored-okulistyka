@@ -1,0 +1,43 @@
+body,
+html {
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    main {
+        width: 70%;
+        margin: 0 auto;
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            color: $separator-color;
+        }
+
+        .fa-container-blue {
+            color: $secondary-color;
+            margin-right: 10px;
+        }
+
+    }
+
+    .full-width-bar {
+        width: 100vw;
+        position: relative;
+        margin-left: -51vw;
+        height: 1070px;
+        margin-top: -1000px;
+        left: 50%;
+        background-color: #131224;
+        z-index: -2;
+    }
+}
